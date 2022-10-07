@@ -130,7 +130,7 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 			SAXParser parser = factory.newSAXParser();
 
 			XMLHandler handler = new XMLHandler();
-			parser.parse(new File("C:\\Users\\danil\\OneDrive\\Рабочий стол\\УНИВЕР\\5 сем\\ВТ\\lab2\\data.xml"), handler);
+			parser.parse(new File("data.xml"), handler);
 
 		}
 		catch (ParserConfigurationException | SAXException | IOException e){}
@@ -147,7 +147,7 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 			SAXParser parser = factory.newSAXParser();
 
 			XMLHandlerWithCriteria handler = new XMLHandlerWithCriteria();
-			parser.parse(new File("C:\\Users\\danil\\OneDrive\\Рабочий стол\\УНИВЕР\\5 сем\\ВТ\\lab2\\data.xml"), handler);
+			parser.parse(new File("data.xml"), handler);
 
 		}
 		catch (ParserConfigurationException | SAXException | IOException e){}
